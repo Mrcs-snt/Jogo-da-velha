@@ -13,8 +13,9 @@ public class PainelTabuleiro extends JPanel {
 
         for (int i = 0; i < tamanho; i++) {
             for (int j = 0; j < tamanho; j++) {
-                JLabel celula = new JLabel("", SwingConstants.CENTER);
+                JLabel celula = new JLabel((i + 1) + "," + (j + 1), SwingConstants.CENTER);
                 celula.setFont(new Font("Arial", Font.BOLD, 28));
+                celula.setForeground(Color.LIGHT_GRAY);
                 celula.setOpaque(true);
                 celula.setBackground(Color.WHITE);
 
